@@ -4,14 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <style>
+        #header{
+            margin: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: xx-large;
+            position: relative;
+            color: white;
+           
+        
+        }
+
+        .img{
+            float: right;
+            width: 300px;
+            height: 300px;
+            border-radius: 10%;
+    
+        }
+
+        div#contact, hr{
+            clear: both;
+            padding: 20px;
+        }
+
+        .button{
+            background-color:gray;
+            color: white;
+            font-size: 20px;
+            display: inline-block;
+            padding: 15px;
+            border-radius: 10%;
+            border-color: black;
+        
+        }
+        .footer{
+            text-align:  center;
+            margin-top: 100px;
+        }
+    </style>
 </head>
-<body style="background-color: aliceblue;">
-<h1>Gangaprasad Kaveti</h1>
-<img src="./assets/images/profile_pic.jpeg" height="400" width="300">
-<hr/>
+<body>
+
+<div style="background-color: #33B8FF  ; border-radius: 20px; margin: 20px;">
+    <div id="header">
+        <h1>Gangaprasad Kaveti</h1>
+        <div style="position: absolute; align-content: end;">
+            <h5>~ Staff Software Engineer</h5>
+        </div>
+        <img class="img" src="./assets/images/profile_pic.jpeg">
+        
+    </div>
+    <div id="contact">
+        <button class="button" onclick="location.href='./public/hobbies.html'">Hobbies</button>
+        <button class="button" onclick="location.href='./public/contact.html'">Contact Details</button>
+      
+             
+    </div>
+</div>
+    
+
+
+
 <br/>
-<h3><a href="./public/hobbies.html">Hobbies</a></h3>
-<h3><a href="./public/contact.html">Contact Details</a></h3>
+
 <h2>Summary</h2>
 <p>
     Having around 10+ years of full-time work experience in the IT industry and well driven orientation on Software Development.
@@ -51,8 +107,8 @@
     <li>Participated and given seminars on technical topics</li>
 </ol>
 
-<footer>
+<div class="footer">
     <p>© 2025 Gangaprasad</p>
-  </footer>
+</div>
 </body>
 </html>
